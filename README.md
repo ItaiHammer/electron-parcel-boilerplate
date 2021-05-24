@@ -1,7 +1,7 @@
 <div  style="display: flex;flex-direction: row;align-items: center;justify-content: center;" >
 
 <a style="outline: none;" href="https://github.com/ItaiHammer/electron-parcel-boilerplate" >
-	<img  style="border-radius: 5px;"  src="boilerplate-picture.png"  alt="drawing"  width="1000"/>
+	<img src="README-picture.png"  alt="drawing"  width="1000"/>
 </a>
 
 </div>
