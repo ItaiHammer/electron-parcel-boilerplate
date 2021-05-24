@@ -1,0 +1,74 @@
+{
+    "name": "electron-parcel-boilerplate",
+    "productName": "electron-parcel-boilerplate",
+    "version": "1.0.0",
+    "description": "My Electron application description",
+    "main": "App.js",
+    "homepage": "./",
+    "scripts": {
+        "start": "concurrently -k \"npm run parcel:dev\" \"npm run electron:dev\"",
+        "parcel:dev": "parcel src/index.html",
+        "parcel:build": "parcel build src/index.html --public-url ./",
+        "create-blank-dist": "mkdir dist && cd dist && echo Blank Build > index.html",
+        "create-blank-cache": "mkdir .cache",
+        "create-blank-build": "concurrently \"npm run create-blank-dist\" \"npm run create-blank-cache\"",
+        "del-dist": "rmdir /S /Q dist",
+        "del-cache": "rmdir /S /Q .cache",
+        "del-build": "npm run del-dist && npm run del-cache",
+        "electron:start": "electron .",
+        "electron:dev": "wait-on tcp:1234 && electron .",
+        "build": "npm run parcel:build && npm run make",
+        "package": "electron-forge package",
+        "make": "electron-forge make",
+        "publish": "electron-forge publish",
+        "lint": "echo \"No linting configured\"",
+        "git-build": "npm run del-build && git add ."
+    },
+    "keywords": [],
+    "author": "Itai Hammer",
+    "license": "MIT",
+    "config": {
+        "forge": {
+            "packagerConfig": {},
+            "makers": [
+                {
+                    "name": "@electron-forge/maker-squirrel",
+                    "config": {
+                        "name": "electron_parcel_boilerplate"
+                    }
+                },
+                {
+                    "name": "@electron-forge/maker-zip",
+                    "platforms": [
+                        "darwin"
+                    ]
+                },
+                {
+                    "name": "@electron-forge/maker-deb",
+                    "config": {}
+                },
+                {
+                    "name": "@electron-forge/maker-rpm",
+                    "config": {}
+                }
+            ]
+        }
+    },
+    "dependencies": {
+        "@electron/remote": "^1.1.0",
+        "concurrently": "^6.1.0",
+        "electron-is-dev": "^2.0.0",
+        "electron-squirrel-startup": "^1.0.0",
+        "parcel-bundler": "^1.12.5",
+        "sass": "^1.34.0",
+        "wait-on": "^5.3.0"
+    },
+    "devDependencies": {
+        "@electron-forge/cli": "^6.0.0-beta.57",
+        "@electron-forge/maker-deb": "^6.0.0-beta.57",
+        "@electron-forge/maker-rpm": "^6.0.0-beta.57",
+        "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
+        "@electron-forge/maker-zip": "^6.0.0-beta.57",
+        "electron": "^12.0.9"
+    }
+}
