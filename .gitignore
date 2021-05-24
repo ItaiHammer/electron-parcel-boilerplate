@@ -87,3 +87,7 @@ typings/
 
 # Electron-Forge
 out/
+
+# Parcel Folders
+/dist
+/.cache

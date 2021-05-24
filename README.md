@@ -44,21 +44,21 @@ npm i
 
 ### Build Commands:
 
-`npm del-dist` - Delets the dist folder
+`npm run del-dist` - Delets the dist folder
 
-`npm del-cache` - Delets the cache folder
+`npm run del-cache` - Delets the cache folder
 
-`npm del-build` - Delets the dist and cache folder
+`npm run del-build` - Delets the dist and cache folder
 
-`npm create-blank-dist` - Creates a dist folder with a blank HTML file
+`npm run create-blank-dist` - Creates a dist folder with a blank HTML file
 
-`npm create-blank-cache` - Creates a blank cache folder
+`npm run create-blank-cache` - Creates a blank cache folder
 
-`npm create-blank-build` - Creates a blank cache folder and a dist folder with a blank HTML file
+`npm run create-blank-build` - Creates a blank cache folder and a dist folder with a blank HTML file
 
 # Maintainer
 
--   [Itai Hammer](https://github.com/ItaiHammer)
+- [Itai Hammer](https://github.com/ItaiHammer)
 
 # License
 
