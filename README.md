@@ -8,7 +8,7 @@
 
 <br/>
 
-Electron Parcel Boilerplate uses: [Parcel](https://parceljs.org/), [concurrently](https://www.npmjs.com/package/concurrently), [sass](https://www.npmjs.com/package/sass), [wait-on](https://www.npmjs.com/package/wait-on), and [Electron](https://www.electronjs.org/).
+Electron Parcel Boilerplate uses: [Parcel](https://parceljs.org/), [Concurrently](https://www.npmjs.com/package/concurrently), [Sass](https://www.npmjs.com/package/sass), [wait-on](https://www.npmjs.com/package/wait-on), and [Electron](https://www.electronjs.org/).
 
 # Install
 
