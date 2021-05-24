@@ -2,7 +2,7 @@
     "name": "electron-parcel-boilerplate",
     "productName": "electron-parcel-boilerplate",
     "version": "1.0.0",
-    "description": "My Electron application description",
+    "description": "An easier way to create desktop apps",
     "main": "App.js",
     "homepage": "./",
     "scripts": {
